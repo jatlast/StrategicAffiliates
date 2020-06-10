@@ -1,0 +1,44 @@
+a:hover {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #FF6600;}
+.AlignCenter {background-position: center;  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; text-align: center;}
+.AlignNav {position: absolute;	left: 13px;	top: 80px;	width: 147px;	background-color: #FFFFFF;}
+.AlignLeft {font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 12px; color: #000000; background-position: left;}
+.AlignRight {background-position: right;	font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 12px; text-align: right;	font-weight: normal;}
+.AlignTop {background-position: top;	font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 12px; text-align: right;	font-weight: normal;}
+.BG1Text1 {font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 12px; color: #FFFFFF;	background-color: #3B5590; font-weight: bold}
+.BG2Text2 {background-color: #B1C0E0; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000}
+.BG3Text3 {background-color: #CCCCCC; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; text-align: left; font-weight: normal;}
+.BG4Text4 {background-color: #CCCCCC; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; color: #000000; text-align: left; font-weight: bold;}
+.BGLeftColumn {background-color: #E0E0E0;}
+.BGRightColumn {	background-color: #E0E0E0;	text-align: center;}
+.BGHeader {background-color: #57689C;}
+.BGFooter {background-color: #57689C;}
+.BGMainCell {color: #FFFFFF;}
+.BGWhiteTextBlack1 {	font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 12px;	color: #000000;	background-color: #FFFFFF;	font-weight: normal;	text-align: left;}
+.BlackTextSmall {font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 9px;}
+.BlackTextMedium {font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 12px; color: #000000; text-align: left;	font-weight: normal;}
+.BlackTextMediumAlignRight {font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 12px; color: #000000; text-align: left;	font-weight: normal;}
+.BlackTextLargeAlignRight {font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 13px;	color: #000000;	text-align: right;}
+.BlackTextMediumAlignRight {font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 12px;	color: #000000;	text-align: right;}
+.BlackTextLarge {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px;}
+.BlackTextLargeJustify {	font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 13px;	text-align: justify;}
+.BlackTextLargeBold {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold;}
+.BlackTextLarge1 {font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 15px;}
+.BlackTextLarge2 {font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 17px;}
+.BlackTextLarge3 {font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 19px;}
+.BlackTextLarge3Bold {	font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 19px;	font-weight: bolder;}
+.NavText {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000}
+.NavText1 {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 13px; color: #000000}
+.NavText2 {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 14px; color: #000000}
+.OrangeTextLarge {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; color: #FF9900}
+.OrangeTextLargeAlignRight {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal; color: #FF6600; text-align: right;}
+.OrangeTextLargeBold {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #FF9900}
+.OrangeTextLargeBoldAlignRight {	font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 13px;	font-weight: bold;	color: #FF9900;	text-align: right;}
+.RedTextSmall {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;	font-size : 9px; color: #FF0000;}
+.RedTextMedium {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #FF0000; font-weight: normal}
+.RedTextLarge {font-family: Verdana, Arial, Helvetica, sans-serif;  font-size : 13px;}
+.RedTextLargeBold {font-family: Verdana, Arial, Helvetica, sans-serif;	font-weight: bold;	font-size: 13px; color: #FF0000;}
+.WhiteTextSmallMedium {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; color: #FFFFFF; font-weight: normal; text-decoration: none}
+.WhiteTextMedium {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #FFFFFF; font-weight: normal; text-decoration: none}
+.WhiteTextLargeBold {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; color: #FFFFFF; font-weight: bold; text-decoration: none}
+.TableFormatMain {	width: 100%;}
+.TableFormatNav {	width: 100%;	background-color: #FFFFFF;	text-align: left;	vertical-align: middle;	border: 1px solid #CCCCCC;	padding: 0px;margin: 0px;}

@@ -1,0 +1,128 @@
+################################## USER ######################################
+#                      LinkMap.dat Usage Directions
+#
+#  1. LinkMap.dat is a configuration file containing Key/Value pairs
+#  2. Left  column = Key
+#  3. Right column = Value
+#  4. No spaces are allowed in neither Keys nor Values
+#  5. Lines beginning with the Number Sign (#) are ignored
+#  6. Each group of Key/Value pairs should have a title decribing its purpose
+#
+#			Last updated on: 12/19/2002 15:21:30
+#
+###############################################################################
+
+# KEY			VALUE
+
+######### Debugging #############
+SYSTEM			affiliate_Cgi_User
+
+######### Database Login #############
+DBNAME			207.36.118.248
+DBUSER			affiliate_test
+DBPWD			citrix
+
+######### URLs #############
+ROOT			http://10.10.10.5:1901
+IMAGES			http://10.10.10.5:1901/images
+PICTURES		http://10.10.10.5:1901/Pictures
+CGIBIN			http://10.10.10.5:1901/cgi-bin
+
+######### CSS #############
+STYLE_SHEET	sa.css
+
+######### Web Page Colors #############
+HTML_POPUP_BGCOLOR	#BDD2D2
+HTML_HEADFOOT_BGCOLOR	#BDD2D2
+HTML_NAV_BGCOLOR	#F5F5E3
+HTML_BODY_BGCOLOR	#D1D1BF
+
+INBOX_COLOR_1		white
+INBOX_COLOR_2		#c0c0c0
+OUTBOX_COLOR_1		white
+OUTBOX_COLOR_2		#c0c0c0
+
+######### Graph Options #############
+GRAPH_COLOR_1		#FF9900
+GRAPH_COLOR_2		#FF3300
+GRAPH_COLOR_3		#CC0033
+GRAPH_COLOR_4		#663399
+GRAPH_COLOR_5		#0033CC
+GRAPH_COLOR_6		#009900
+
+GRAPH_SHADOW_DEPTH	0
+GRAPH_BAR_SPACING	4
+GRAPH_CUMULATE		0
+
+GRAPH_X_LONG_TICKS	0
+GRAPH_Y_LONG_TICKS	1
+
+GRAPH_LABELS_COLOR	#000000
+GRAPH_LEGEND_COLOR	#000000
+GRAPH_TEXT_COLOR	#000000
+
+######### Web Page Text #############
+HTML_TITLE 		Connecitons_Dev
+HTML_HEAD		<strong>persianconnections</strong>
+COPYRIGHT_YEAR		2000-2002
+EMAIL			jatlast@hotmail.com
+WHICH_CONNECTIONS 	persianconnections
+
+######### Icon Names #############
+FIRSTARROW		nav_first.gif
+NEXTARROW		nav_next.gif
+PREVIOUSARROW		nav_previous.gif
+LASTARROW		nav_last.gif
+
+LOGO			SA_Logo.gif
+
+############# NOTE ####################################################
+# You mus include the brackets [ ] when using fields with spaces
+# ALSO:  Only use FOOTER_ALL_TEXT or FOOTER -->  NOT BOTH
+#  Comment out the one you don't want with the number sign --> #
+#######################################################################
+FOOTER_ALL_TEXT		[<TD colspan="3" height="25"><span class="BlackTextMedium">Copyright &copy; 2003, StrategicAffiliates.com. All rights reserved.</span> <a href="http://www.onemonkey.com" class="NavText">OneMonkey.com Advertising</a> | <a href="http://www.netlovematch.com" class="NavText">NetLoveMatch.com</a></TD>]
+#FOOTER			SA_footer.gif
+
+NO_PIC_SMALL		photo_not_available_60x60.gif
+NO_PIC_MEDIUM		photo_not_available_120x120.gif
+NO_PIC_LARGE		photo_not_available_180x180.gif
+
+EMAILSYMBOL		Email.jpg
+DELETSYMBOL		DeleteMailX.gif
+BOOKMARKSYMBOL		pushpin2.gif
+UNREADSYMBOL		redhart.gif
+LINESYMBOL		line.gif
+SPACESYMBOL		sp1.gif
+PROCESSINGSYMBOL	processing.gif
+
+BECOME_PREMIUM_MEMBER	become_premium_member_now.gif
+BECOME_MEMBER_GIF	become_a_premium_member_now.gif
+
+######### Blat #############
+SMTP_HOST		10.10.10.5
+BLAT_PATH		D:/Required
+
+######### CC Processing Test/Live Switch #############
+# 0 = Live
+# 1 = Test
+AUTHORIZE_TEST_MODE	1
+
+######### Local Paths #############
+LOG_FOLDER		D:/MyData/Personal/Projects/Connections/Affiliate/Affiliate_Dev/admin/Log/
+BANNER_FOLDER		D:/MyData/Personal/Projects/Connections/Affiliate/Affiliate_Dev/Banners/
+DOS_BANNER_FOLDER	D:\MyData\Personal\Projects\Connections\Affiliate\Affiliate_Dev\Banners\
+
+######### Advertising #############
+ADV_CGIBIN		http://10.10.10.5:1800/cgi-bin
+#Program name used to retrieve text ads...
+ADV_RETRIEVE		RetrieveTextAds.exe
+
+ADV_HOST_UNIQUE_ID	301
+
+######### Affiliate #############
+AFL_CGIBIN		http://10.10.10.5:1901/cgi-bin
+#Program name used to retrieve affiliate ads...
+AFL_RETRIEVE		Afl_RetrieveAds.cgi
+
+######### Rotating Gifs (Not used) #############

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+  <HEAD>
+    <META name="generator" content="HTML Tidy, see www.w3.org">
+    <TITLE>
+      Delete All Cookies
+    </TITLE>
+  </HEAD>
+  <BODY bgcolor="WHITE">
+    <P>
+       <SCRIPT language="JAVASCRIPT" type="TEXT/JAVASCRIPT">
+       <!--
+       if (document.cookie != "") 
+        {
+            thisCookie = document.cookie.split("; ")
+            expireDate = new Date
+            expireDate.setDate(expireDate.getDate()-1)
+                                     
+            for (i=0; i<thisCookie.length; i++) 
+             {
+                cookieName = thisCookie[i].split("=")[0]
+                document.cookie = cookieName + "=;expires=" + expireDate.toGMTString()
+             }
+             document.write("<H1>Number of cookies deleted: " + thisCookie.length + "<\/H1>")
+           }
+           else
+           {
+             document.write("<H1>Number of cookies deleted: 0<\/H1>")
+           }
+
+       function Closer()
+        {
+          window.close()
+        }
+       // -->
+       </SCRIPT>
+       <!-- close window --> 
+      <INPUT type="BUTTON" value="Close Window" onclick="Closer()">
+    </P>
+  </BODY>
+</HTML>
+

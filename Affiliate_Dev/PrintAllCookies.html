@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>Print All Cookies</TITLE>
+
+</HEAD>
+
+<BODY>
+<font face="Arial, Arial Black, Arial Narrow" size="4">Print All Cookies</font><font face="Arial, Arial Black, Arial Narrow" size="4"> 
+<SCRIPT LANGUAGE="javascript">
+<!--
+	if (document.cookie != "")
+	{
+		cookieArray = document.cookie.split(";")
+		document.write("There are " + cookieArray.length + " cookies.<BR>") 
+		for(i=0; i<cookieArray.length; i++)
+		{
+			document.write("&nbsp;&nbsp;Cookie #" + i + ":<BR>") 			
+			if(cookieArray[i] != "")
+			{
+				document.write( "&nbsp;&nbsp;&nbsp;&nbsp; name  = [" + cookieArray[i].split("=")[0] + "]<BR>")
+				document.write( "&nbsp;&nbsp;&nbsp;&nbsp; value = [" + cookieArray[i].split("=")[1] + "]<BR>")
+			}
+		}
+	}
+//-->
+</SCRIPT>
+</font> 
+<HR>
+<font face="Arial, Arial Black, Arial Narrow" size="4"><SMALL>Created on ... August 
+13, 2000</SMALL> </font> 
+</BODY>
+</HTML>

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+</HEAD>
+
+<BODY>
+<SCRIPT Language="JavaScript">
+<!--
+/*
+* This function parses comma separated name=value 
+* argument pairs from the query string of the URL. 
+* It stores the name=value pairs in 
+* properties of an object and then returns that object
+* 
+* Jim K - From Orielly JSB pp 244
+*/
+
+function getArgs() {
+	var args = new Object();
+	// Get Query String
+	var query = location.search.substring(1); 
+	// Split query at the comma
+	var pairs = query.split("&"); 
+	
+	// Begin loop through the querystring
+	for(var i = 0; i < pairs.length; i++) {
+
+		// Look for "name=value"
+		var pos = pairs[i].indexOf('='); 
+		// if not found, skip to next
+		if (pos == -1) continue; 
+		// Extract the name
+		var argname = pairs[i].substring(0,pos); 
+		
+		// Extract the value
+		var value = pairs[i].substring(pos+1); 
+		// Store as a property
+		args[argname] = unescape(value); 
+	}
+	return args; // Return the Object
+}
+
+// Get the values back
+var args = getArgs(); //Get the arguments
+// print debugging
+document.write("one = " + args.one);
+
+//-->
+</SCRIPT>
+
+</BODY>
+</HTML>

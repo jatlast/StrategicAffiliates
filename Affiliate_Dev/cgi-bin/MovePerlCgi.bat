@@ -1,0 +1,12 @@
+copy D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Perl\PrintEnv.cgi D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\
+copy D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Perl\SendMail.cgi D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\
+copy D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Perl\UploadPicture.cgi D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\
+copy D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Perl\Admin_PreSendMail.pl D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\
+copy D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Perl\AuthorizeDotNet\GenAuthorizeNetFormCC.cgi D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\
+copy D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Perl\AuthorizeDotNet\GenAuthorizeNetFormECHECK.cgi D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\
+copy D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Perl\AuthorizeDotNet\AuthorizeNetSendSSL.cgi D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\
+copy D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Perl\AuthorizeDotNet\AuthorizeNetReceive.cgi D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\
+copy D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Perl\CancelPayingMembership.cgi D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\
+copy D:\MyData\Personal\Projects\Connections\ManipulateLinkMap\ManipulateLinkMap.cgi D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\
+copy D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Perl\AuthorizeDotNet\PerlScript\sim.pl D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\
+copy D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Perl\EmailVerification\ManageEmailVerification.cgi D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin

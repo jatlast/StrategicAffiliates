@@ -1,0 +1,1 @@
+copy D:\MyData\Personal\Projects\Connections\SourceCode\JavaScript\*.js D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\JavaScript

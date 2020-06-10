@@ -1,0 +1,706 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+  <!-- persianconnections_Cgi_User -->
+  <HEAD>
+    <TITLE>
+      PersianConnections.com
+    </TITLE>
+    <LINK href="/css/pc.css" rel="stylesheet" type="text/css">
+    <SCRIPT type="text/javascript" language="javascript" src="http://www.PersianConnections.com/JavaScript/GenAuthorizeNetFormCC.js"></SCRIPT>
+  </HEAD>
+  <!-- Begin Entire Body -->
+  <BODY>
+    <TABLE border="0" cellpadding="3" cellspacing="0">
+      <!-- Begin Header Row -->
+      <TR>
+        <TD colspan="2">
+          <IMG src="/images/persian_connections_logo.gif" width="800" height="50">
+        </TD>
+      </TR>
+      <!-- End Header Row -->
+      <TR>
+        <TD valign="top" width="150">
+          <P>&nbsp;
+            
+          </P>
+          <TABLE border="0" cellpadding="3" cellspacing="0" width="150">
+            <TR>
+              <TD>
+                <A href="GenHome.exe" class="NavText">Member Home</A>
+              </TD>
+            </TR>
+            <TR>
+              <TD>
+                <A href="GenInbox.exe" class="NavText">Inbox</A>
+              </TD>
+            </TR>
+            <TR>
+              <TD>
+                <A href="GenOutbox.exe" class="NavText">Outbox</A>
+              </TD>
+            </TR>
+            <TR>
+              <TD class="nav_text">
+                <A href="../AdvancedSearch.html" class="NavText">Advanced Search</A>
+              </TD>
+            </TR>
+            <TR>
+              <TD>
+                <SPAN class="NavText"><A href="../SimpleSearch.html" class="NavText">S</A></SPAN><A href="../SimpleSearch.html" class="nav_text"><SPAN class="NavText">imple Search</SPAN></A>
+              </TD>
+            </TR>
+            <TR>
+              <TD>
+                <A href="../LogOut.html" class="NavText">LogOut</A>
+              </TD>
+            </TR>
+            <TR>
+              <TD>
+                <SPAN class="NavText"><A href="mailto:admin@PersianConnections.com" class="nav_text">C</A></SPAN><A href="mailto:admin@PersianConnections.com" class="nav_text"><SPAN class="NavText">ontact us</SPAN></A>
+              </TD>
+            </TR>
+            <TR>
+              <TD>
+              </TD>
+            </TR>
+          </TABLE>
+          <!-- End Navigation Table -->
+        </TD>
+        <!-- End Navigation Table Data Cell-->
+		<!-- Begin Main Data Cell -->
+        <TD width="644">
+          <TABLE width="100%" border="0" cellpadding="0" cellspacing="0">
+           <FORM name="update_payment_form" method="POST" action="GenAuthorizeNetFormCC.cgi" onsubmit="return checkPromotionalCode(this)">
+			<tr>
+				<TD width="60%" class="AlignCenter">
+					<IMG src="/images/pc_please_choose_plan.gif" width="321" height="53">
+				</TD>
+				<TD width="40%" >
+				  <TABLE width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#3B5590">
+					<TR valign="top">
+					  <TD class="AlignCenter">
+						<b>Have a promotional code?&nbsp;</b><br>
+						Enter it here:
+						<input type="text" name="promotion_code" size="20">
+						<input type=image name="submit.update_payment_form" value="Update Payment Form" border=0 alt="Update Payment Form" src=/images/promotion_code_apply.gif width=42 height=14 border=0>
+					  </TD>
+					</tr>
+				  </TABLE>
+				</TD>
+			</tr>
+           </FORM>
+		  </TABLE>
+		  <BR>
+          <TABLE width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#3B5590">
+            <TR valign="top">
+              <TD>
+                <FORM method="POST" action="AuthorizeNetSendSSL.cgi" onsubmit="return checkForm(this)">
+                  <TABLE border="0" width="100%" cellspacing="0" cellpadding="3">
+                    <TR>
+                      <TD colspan="3" class="BlackTextMedium">
+                        You are only a few easy steps away from connecting with other PersianConnections.com members. Please choose your membership plan and get ready to get the most from your PersianConnections.com experience.
+                      </TD>
+                    </TR>
+                    <TR>
+                      <TD height="25" colspan="3" class="BG1Text1">
+                        <IMG src="/images/PC_upgrade_step1.gif" height="25" width="300">
+                      </TD>
+                    </TR>
+                    <TR>
+                      <TD width="122" class="BlackTextMedium">
+                        <INPUT type="radio" name="months_joined" value="1"> One Month
+                      </TD>
+                      <TD width="150" class="BlackTextMedium">
+                        4.99 (US $)
+                      </TD>
+                    </TR>
+                    <TR>
+                      <TD width="122" class="BlackTextMedium">
+                        <INPUT type="radio" name="months_joined" value="3"> Three Month
+                      </TD>
+                      <TD width="150" nowrap class="paragraph_black_left_align">
+                        <SPAN class="BlackTextMedium">9.99 (US $)</SPAN> <SPAN class="RedTextMedium">save 34%</SPAN>
+                      </TD>
+                    </TR>
+                    <TR>
+                      <TD width="122" class="BlackTextMedium">
+                        <INPUT type="radio" name="months_joined" value="12"> One Year
+                      </TD>
+                      <TD width="150" nowrap class="paragraph_black_left_align">
+                        <SPAN class="BlackTextMedium">34.99 (US $)</SPAN> <SPAN class="RedTextMedium">save 42%</SPAN>
+                      </TD>
+                    </TR>
+                    <TR>
+                      <TD class="BlackTextMedium">
+                        <INPUT type="radio" name="months_joined" value="240"> Lifetime
+                      </TD>
+                      <TD width="150" nowrap class="paragraph_black_left_align">
+                        <SPAN class="BlackTextMedium">74.99 (US $)</SPAN><FONT color="#FF0000">&nbsp;</FONT> <SPAN class="RedTextMedium">save 93%</SPAN>
+                      </TD>
+                    </TR>
+                    <TR>
+                      <TD colspan="3">
+                        <P class="BlackTextMedium"> Your subscription will be 
+                      auto-renewed at the monthly rate listed below. All fees 
+                      are charged in U.S. dollars. You may cancel your membership 
+                      at anytime; simply logon to your account and click &quot;Cancel 
+                      Gold Membership&quot; located beneath "My Membership Type" 
+                      on the bottom of the &quot;Member Home&quot; page. </P>
+                        <P class="BlackTextMedium">
+                          PersianConnections.com offers a risk-free, 14-day money back guarantee in the event you are not completely satisfied with our service. Contact us at PersianConnections.com., Attn: Cancellations, 116 Willow Avenue Suite 4, Hoboken, NJ 07030.
+                        </P>
+                      </TD>
+                    </TR>
+                  </TABLE>
+                  <TABLE border="0" width="100%" cellspacing="0" cellpadding="3">
+                    <!--    current user_name  -->
+                    <TR>
+                      <TD colspan="2" class="BG1Text1">
+                        <IMG src="/images/PC_upgrade_step2.gif" width="300" height="25">
+                      </TD>
+                    </TR>
+                    <TR>
+                  <TD colspan="2" class="RedTextLargeBold"> Note: 
+                    Enter your name and address exactly as they appear on your 
+                    financial institution's account statement.</TD>
+                    </TR>
+                    <TR>
+                  <TD>&nbsp;
+                  </TD>
+                  <TD class="BlackTextMedium"> (all fields required)</TD>
+                    </TR>
+                    <!--  name_on_card -->
+                    <TR>
+	                  <TD class="AlignRight">Name</TD>
+                      <TD>
+                        <INPUT name="name_on_card" type="text" id="name_on_card" value="Jubin" size="20">
+                      </TD>
+                    </TR>
+					<!--  street_address -->
+                    <TR>
+                  	<TD width="201" class="AlignRight">Address</TD>
+                      <TD width="426" >
+                        <INPUT name="street_address" type="text" value="116 Willow" size="20">
+                      </TD>
+                    </TR>
+                    <!--  city -->
+                    <TR>
+                      
+                  <TD width="201" class="AlignRight">City</TD>
+                      <TD width="426">
+                        <INPUT name="city" type="text" value="Hoboken" size="20">
+                      </TD>
+                    </TR>
+                   <!--  state -->
+                    <TR>
+                      
+                  <TD width="201" class="AlignRight">State</TD>
+                      <TD width="426">
+                        <SELECT name="state" size="1">
+                      <OPTION value="0" selected> Choose a State </OPTION>
+                      <OPTION value="1"> Alabama </OPTION>
+                      <OPTION value="2"> Alaska </OPTION>
+                      <OPTION value="3"> Arizona </OPTION>
+                      <OPTION value="4"> Arkansas </OPTION>
+                      <OPTION value="5"> California </OPTION>
+                      <OPTION value="9"> Colorado </OPTION>
+                      <OPTION value="10"> Connecticut </OPTION>
+                      <OPTION value="11"> Delaware </OPTION>
+                      <OPTION value="13"> Florida </OPTION>
+                      <OPTION value="14"> Georgia </OPTION>
+                      <OPTION value="16"> Hawaii </OPTION>
+                      <OPTION value="17"> Idaho </OPTION>
+                      <OPTION value="18"> Illinois </OPTION>
+                      <OPTION value="19"> Indiana </OPTION>
+                      <OPTION value="20"> Iowa </OPTION>
+                      <OPTION value="21"> Kansas </OPTION>
+                      <OPTION value="22"> Kentucky </OPTION>
+                      <OPTION value="23"> Louisiana </OPTION>
+                      <OPTION value="24"> Maine </OPTION>
+                      <OPTION value="25"> Maryland </OPTION>
+                      <OPTION value="26"> Massachusetts </OPTION>
+                      <OPTION value="27"> Michigan </OPTION>
+                      <OPTION value="28"> Minnesota </OPTION>
+                      <OPTION value="29"> Mississippi </OPTION>
+                      <OPTION value="30"> Missouri </OPTION>
+                      <OPTION value="31"> Montana </OPTION>
+                      <OPTION value="32"> Nebraska </OPTION>
+                      <OPTION value="33"> Nevada </OPTION>
+                      <OPTION value="34"> New Hampshire </OPTION>
+                      <OPTION value="35"> New Jersey </OPTION>
+                      <OPTION value="36"> New Mexico </OPTION>
+                      <OPTION value="37"> New York </OPTION>
+                      <OPTION value="39"> North Carolina </OPTION>
+                      <OPTION value="40"> North Dakota </OPTION>
+                      <OPTION value="41"> Ohio </OPTION>
+                      <OPTION value="42"> Oklahoma </OPTION>
+                      <OPTION value="43"> Oregon </OPTION>
+                      <OPTION value="44"> Pennsylvania </OPTION>
+                      <OPTION value="45"> Puerto Rico </OPTION>
+                      <OPTION value="46"> Rhode Island </OPTION>
+                      <OPTION value="47"> South Carolina </OPTION>
+                      <OPTION value="48"> South Dakota </OPTION>
+                      <OPTION value="49"> Tennessee </OPTION>
+                      <OPTION value="50"> Texas </OPTION>
+                      <OPTION value="54"> Utah </OPTION>
+                      <OPTION value="55"> Vermont </OPTION>
+                      <OPTION value="56"> Virginia </OPTION>
+                      <OPTION value="57"> Washington </OPTION>
+                      <OPTION value="12"> Washington, D.C. </OPTION>
+                      <OPTION value="58"> West Virginia </OPTION>
+                      <OPTION value="59"> Wisconsin </OPTION>
+                      <OPTION value="60"> Wyoming </OPTION>
+                    </SELECT>
+                      </TD>
+                    </TR>
+                    <!--  country -->
+                    <TR>
+                      
+                  <TD width="201" class="AlignRight">Country</TD>
+                      <TD width="426">
+                        <SELECT name="country" size="1">
+                      <option value="0">Choose a Country </option>
+                      <option value="1">Afghanistan </option>
+                      <option value="2">Albania </option>
+                      <option value="3">Algeria </option>
+                      <option value="4">American Samoa </option>
+                      <option value="5">Andorra </option>
+                      <option value="6">Angola </option>
+                      <option value="7">Anguilla </option>
+                      <option value="8">Antarctica </option>
+                      <option value="9">Antigua/Barbuda </option>
+                      <option value="10">Argentina </option>
+                      <option value="11">Armenia </option>
+                      <option value="12">Aruba </option>
+                      <option value="13">Australia </option>
+                      <option value="14">Austria </option>
+                      <option value="15">Azerbaijan </option>
+                      <option value="16">Bahamas </option>
+                      <option value="17">Bahrain </option>
+                      <option value="18">Bangladesh </option>
+                      <option value="19">Barbados </option>
+                      <option value="20">Belarus </option>
+                      <option value="21">Belgium </option>
+                      <option value="22">Belize </option>
+                      <option value="23">Benin </option>
+                      <option value="24">Bermuda </option>
+                      <option value="25">Bhutan </option>
+                      <option value="26">Bolivia </option>
+                      <option value="27">Bosnia-Herzegovina </option>
+                      <option value="28">Botswana </option>
+                      <option value="29">Bouvet Island </option>
+                      <option value="30">Brazil </option>
+                      <option value="31">British Indian Ocean T. </option>
+                      <option value="32">Brunei Darussalam </option>
+                      <option value="33">Bulgaria </option>
+                      <option value="34">Burkina Faso </option>
+                      <option value="35">Burundi </option>
+                      <option value="36">Cambodia </option>
+                      <option value="37">Cameroon </option>
+                      <option value="38">Canada </option>
+                      <option value="39">Cape Verde </option>
+                      <option value="40">Cayman Islands </option>
+                      <option value="41">Central African, Rep. </option>
+                      <option value="42">Chad </option>
+                      <option value="43">Chile </option>
+                      <option value="44">China </option>
+                      <option value="45">Christmas Island </option>
+                      <option value="46">Cocoa (Keeling) Islands </option>
+                      <option value="47">Colombia </option>
+                      <option value="48">Comoros </option>
+                      <option value="49">Congo </option>
+                      <option value="50">Cook Islands </option>
+                      <option value="51">Costa Rica </option>
+                      <option value="52">Cote Divoire </option>
+                      <option value="53">Croatia </option>
+                      <option value="54">Cuba </option>
+                      <option value="55">Cyprus </option>
+                      <option value="56">Czech Republic </option>
+                      <option value="57">Denmark </option>
+                      <option value="58">Djibouti </option>
+                      <option value="59">Dominica </option>
+                      <option value="60">Dominican Republic </option>
+                      <option value="61">East Timor </option>
+                      <option value="62">Ecuador </option>
+                      <option value="63">Egypt </option>
+                      <option value="64">El Salvador </option>
+                      <option value="65">Equatorial Guinea </option>
+                      <option value="66">Eritrea </option>
+                      <option value="67">Estonia </option>
+                      <option value="68">Ethiopia </option>
+                      <option value="69">Falkland Islands-Malvinas </option>
+                      <option value="70">Faroe Islands </option>
+                      <option value="71">Fiji </option>
+                      <option value="72">Finland </option>
+                      <option value="73">France </option>
+                      <option value="74">French Guiana </option>
+                      <option value="75">French Polynesia </option>
+                      <option value="76">French Southern Ter. </option>
+                      <option value="77">Gabon </option>
+                      <option value="78">Gambia </option>
+                      <option value="79">Georgia </option>
+                      <option value="80">Germany </option>
+                      <option value="81">Ghana </option>
+                      <option value="82">Gibraltar </option>
+                      <option value="83">Great Britain </option>
+                      <option value="84">Greece </option>
+                      <option value="85">Greenland </option>
+                      <option value="86">Grenada </option>
+                      <option value="87">Guadeloupe </option>
+                      <option value="88">Guam </option>
+                      <option value="89">Guatemala </option>
+                      <option value="90">Guinea </option>
+                      <option value="91">Guinea-Bissau </option>
+                      <option value="92">Guyana </option>
+                      <option value="93">Haiti </option>
+                      <option value="94">Heard/Mc Donald Islands </option>
+                      <option value="95">Honduras </option>
+                      <option value="96">Hong Kong </option>
+                      <option value="97">Hungary </option>
+                      <option value="98">Iceland </option>
+                      <option value="99">India </option>
+                      <option value="100">Indonesia </option>
+                      <option value="101">Iran </option>
+                      <option value="102">Iraq </option>
+                      <option value="103">Ireland </option>
+                      <option value="104">Israel </option>
+                      <option value="105">Italy </option>
+                      <option value="106">Jamaica </option>
+                      <option value="107">Japan </option>
+                      <option value="108">Jordan </option>
+                      <option value="109">Kazakhstan </option>
+                      <option value="110">Kenya </option>
+                      <option value="111">Kiribati </option>
+                      <option value="112">Korea, Democratic P. Rep. </option>
+                      <option value="113">Korea, Republic </option>
+                      <option value="114">Kuwait </option>
+                      <option value="115">Kyrgyzstan </option>
+                      <option value="116">Lao P. Democratic Rep. </option>
+                      <option value="117">Latvia </option>
+                      <option value="118">Lebanon </option>
+                      <option value="119">Lesotho </option>
+                      <option value="120">Liberia </option>
+                      <option value="121">Libyan Arab Jamahiriya </option>
+                      <option value="122">Liechtenstein </option>
+                      <option value="123">Lithuania </option>
+                      <option value="124">Luxembourg </option>
+                      <option value="125">Macau </option>
+                      <option value="126">Macedonia </option>
+                      <option value="127">Madagascar </option>
+                      <option value="128">Malawi </option>
+                      <option value="129">Malaysia </option>
+                      <option value="130">Maldives </option>
+                      <option value="131">Mali </option>
+                      <option value="132">Malta </option>
+                      <option value="133">Marshall Islands </option>
+                      <option value="134">Martinique </option>
+                      <option value="135">Mauritania </option>
+                      <option value="136">Mauritius </option>
+                      <option value="137">Mayotte </option>
+                      <option value="138">Mexico </option>
+                      <option value="139">Micronesia </option>
+                      <option value="140">Moldova </option>
+                      <option value="141">Monaco </option>
+                      <option value="142">Mongolia </option>
+                      <option value="143">Montserrat </option>
+                      <option value="144">Morocco </option>
+                      <option value="145">Mozambique </option>
+                      <option value="146">Myanmar </option>
+                      <option value="147">Namibia </option>
+                      <option value="148">Nauru </option>
+                      <option value="149">Nepal </option>
+                      <option value="150">Netherlands </option>
+                      <option value="151">Netherlands Antilles </option>
+                      <option value="152">New Caledonia </option>
+                      <option value="153">New Zealand </option>
+                      <option value="154">Newfoundland </option>
+                      <option value="155">Nicaragua </option>
+                      <option value="156">Niger </option>
+                      <option value="157">Nigeria </option>
+                      <option value="158">Niue </option>
+                      <option value="159">Norfolk Island </option>
+                      <option value="160">Northern Mariana Islands </option>
+                      <option value="161">Norway </option>
+                      <option value="162">Oman </option>
+                      <option value="163">Pakistan </option>
+                      <option value="164">Palau </option>
+                      <option value="165">Panama </option>
+                      <option value="166">Papua New Guinea </option>
+                      <option value="167">Paraguay </option>
+                      <option value="168">Peru </option>
+                      <option value="169">Philippines </option>
+                      <option value="170">Pitcairn </option>
+                      <option value="171">Poland </option>
+                      <option value="172">Portugal </option>
+                      <option value="173">Puerto Rico </option>
+                      <option value="174">Qatar </option>
+                      <option value="175">Reunion </option>
+                      <option value="176">Romania </option>
+                      <option value="177">Russia </option>
+                      <option value="178">Rwanda </option>
+                      <option value="179">S. Georgia/S. Sandwich I. </option>
+                      <option value="180">Saint Kitts and Nevis </option>
+                      <option value="181">Saint Lucia </option>
+                      <option value="182">Saint Vincent/Grenadines </option>
+                      <option value="183">Samoa </option>
+                      <option value="184">San Marino </option>
+                      <option value="185">Sao Tome and Principe </option>
+                      <option value="186">Saudi Arabia </option>
+                      <option value="187">Senegal </option>
+                      <option value="188">Seychelles </option>
+                      <option value="189">Sierra Leone </option>
+                      <option value="190">Singapore </option>
+                      <option value="191">Slovakia (Slovak Rep.) </option>
+                      <option value="192">Slovenia </option>
+                      <option value="193">Solomon Islands </option>
+                      <option value="194">Somalia </option>
+                      <option value="195">South Africa </option>
+                      <option value="196">Spain </option>
+                      <option value="197">Sri Lanka </option>
+                      <option value="198">St. Helena </option>
+                      <option value="199">St. Pierre and Miquelon </option>
+                      <option value="200">Sudan </option>
+                      <option value="201">Suriname </option>
+                      <option value="202">Svalbard/Jan Mayen Isl. </option>
+                      <option value="203">Swaziland </option>
+                      <option value="204">Sweden </option>
+                      <option value="205">Switzerland </option>
+                      <option value="206">Syrian Arab Republic </option>
+                      <option value="207">Taiwan </option>
+                      <option value="208">Tajikistan </option>
+                      <option value="209">Tanzania </option>
+                      <option value="210">Thailand </option>
+                      <option value="211">Togo </option>
+                      <option value="212">Tokelau </option>
+                      <option value="213">Tonga </option>
+                      <option value="214">Trinidad and Tobago </option>
+                      <option value="215">Tunisia </option>
+                      <option value="216">Turkey </option>
+                      <option value="217">Turkmenistan </option>
+                      <option value="218">Turks/Caicos Islands </option>
+                      <option value="219">Tuvalu </option>
+                      <option value="220">Uganda </option>
+                      <option value="221">Ukraine </option>
+                      <option value="222">United Arab Emirates </option>
+                      <option value="223" selected>United States </option>
+                      <option value="224">Uruguay </option>
+                      <option value="225">US Minor Outlying Islands </option>
+                      <option value="226">Uzbekistan </option>
+                      <option value="227">Vanuatu </option>
+                      <option value="228">Vatican City </option>
+                      <option value="229">Venezuela </option>
+                      <option value="230">Viet Nam </option>
+                      <option value="231">Virgin Islands (British) </option>
+                      <option value="232">Virgin Islands (U.S.) </option>
+                      <option value="233">Wallisw/Futuna Islands </option>
+                      <option value="234">Western Sahara </option>
+                      <option value="235">Yeman </option>
+                      <option value="236">Yugoslavia </option>
+                      <option value="237">Zaire </option>
+                      <option value="238">Zambia </option>
+                      <option value="239">Zimbabwe </option>
+                      <option value="0">Other... </option>
+                    </SELECT>
+                      </TD>
+                    </TR>
+                    <!--  zip -->
+                    <TR>
+                      
+                  <TD width="201" class="AlignRight"> Postal Code</TD>
+                      <TD width="426">
+                        <INPUT name="zip2" type="text" value="07030" size="20">
+                      </TD>
+                    </TR>
+                    <!--  telephone  -->
+                    <TR>
+                      
+                  <TD width="201" class="AlignRight"> Telephone</TD>
+                      <TD width="426">
+                        <INPUT name="telephone2" type="text" value="" size="20">
+                      </TD>
+                    </TR>
+                    <TR>
+                      <TD width="201">
+                      </TD>
+                      <TD width="426">&nbsp;
+                        
+                      </TD>
+                    </TR>
+                  </TABLE>
+                  <TABLE border="0" width="100%" cellspacing="0" cellpadding="3">
+                    <TR>
+                      <TD colspan="2" valign="middle" class="BG1Text1">
+                        <IMG src="/images/PC_upgrade_step3.gif" width="300" height="25">
+                      </TD>
+                    </TR>
+                    <TR>
+                      <TD width="201" class="AlignRight">
+                        Card Type :
+                      </TD>
+                      <TD width="426">
+                        <SELECT name="card_type">
+                      <OPTION selected> Choose a Credit Card </OPTION>
+                      <OPTION value="4"> Visa </OPTION>
+                      <OPTION value="5"> Master Card </OPTION>
+                    </SELECT>
+                      </TD>
+                    </TR>
+                    <TR>
+                      <TD width="201" class="AlignRight">
+                        Card Account Number:
+                      </TD>
+                      <TD width="426">
+                        <INPUT type="text" name="account_number" value="4305940010022508" size="30" maxlength="16">
+                      </TD>
+                    </TR>
+                    <TR>
+                      <TD width="201" class="AlignRight">
+                        Expiration Date :
+                      </TD>
+                      <TD width="426">
+                        <SELECT name="expiration_month">
+                      <OPTION selected> 01 </OPTION>
+                      <OPTION> 02 </OPTION>
+                      <OPTION> 03 </OPTION>
+                      <OPTION> 04 </OPTION>
+                      <OPTION> 05 </OPTION>
+                      <OPTION> 06 </OPTION>
+                      <OPTION> 07 </OPTION>
+                      <OPTION> 08 </OPTION>
+                      <OPTION> 09 </OPTION>
+                      <OPTION> 10 </OPTION>
+                      <OPTION> 11 </OPTION>
+                      <OPTION> 12 </OPTION>
+                    </SELECT> <SELECT name="expiration_year">
+                      <OPTION selected> 2003 </OPTION>
+                      <OPTION> 2004 </OPTION>
+                      <OPTION> 2005 </OPTION>
+                      <OPTION> 2006 </OPTION>
+                      <OPTION> 2007 </OPTION>
+                      <OPTION> 2008 </OPTION>
+                      <OPTION> 2009 </OPTION>
+                      <OPTION> 2010 </OPTION>
+                    </SELECT>
+                      </TD>
+                    </TR>
+                    <TR>
+                      <TD width="201" class="AlignRight">
+                        <A href="javascript:newWindowGeneric('../WhatIsCVV2.html')" title="What is CVV2?">Verification Value (CVV2):</A>
+                      </TD>
+                      <TD class="BlackTextMedium">
+                        <INPUT type="text" name="cvv2_code" value="4445" size="8" maxlength="4"> <A href="javascript:newWindowGeneric('../WhatIsCVV2.html')" title="What is CVV2?"> Help...</A>
+                      </TD>
+                    </TR>
+                    <TR>
+                      <TD colspan="2" class="BlackTextMedium">
+                        <SPAN class="BlackTextLargeBold">Note:</SPAN> When you click on the "I Authorize This Transaction" button, your credit card will be charged Immediately.
+                      </TD>
+                    </TR>
+                    <TR>
+                      <TD colspan="2" class="paragraph_black_left_align">
+                        <SPAN class="BlackTextMedium">You, the buyer, may cancel this agreement, without penalty or obligation, at any time prior to midnight of the 14th day following the date of this contract. To cancel this agreement, mail or deliver a signed and dated notice, or send a telegram which states that you, the buyer, are canceling this agreement, or words of similar effect. This notice shall be sent to: PersianConnections.com., Attn: Cancellations, 116 Willow Avenue Suite 4, Hoboken, NJ 07030.</SPAN>
+                      </TD>
+                    </TR>
+                    <TR>
+                      <TD colspan="2" class="BlackTextMedium">
+                        <SPAN class="BlackTextLargeBold">Refund Policy:</SPAN>
+                        <BR>
+                         If you cancel your subscription within 14 days, we will refund the full amount of your subscription. Also, if you cancel your subscription within 14 days following any auto-renewal of your subscription, we will refund the full amount of your auto-renewal. In the event that you die before the end of your subscription period, your estate shall be entitled to a refund of that portion of any payment you have made for your subscription which is allocable to the period after your death. In the event that you become disabled (such that you are unable to use the services of PersianConnections.com) before the end of your subscription period, you shall be entitled to a refund of that portion of any payment you have made for your subscription which is allocable to the period after your disability.
+                      </TD>
+                    </TR>
+                    <TR>
+                      <TD colspan="2" class="paragraph_black_left_align">&nbsp;
+                        
+                      </TD>
+                    </TR>
+                    <TR>
+                      <TD colspan="2" class="AlignCenter">
+                        <FONT face="Arial, Helvetica, sans-serif"> <INPUT name="CC_submit" type="submit" id="CC_submit" value="&quot;I Authorize This Transaction&quot;"></FONT>
+                      </TD>
+                    </TR>
+                  </TABLE>
+                </FORM>
+                <TABLE width="100%" border="0" cellpadding="3" cellspacing="0">
+                  <TR>
+                    <TD width="6%" align="left" valign="top">
+                      <IMG src="/images/SmallPadlock_SSL.gif" width="25" height="25">
+                    </TD>
+                    <TD width="94%" class="BlackTextMedium">
+                      Purchase with confidence. Our site uses SSL (Secure Sockets Layer) Technology to protect your transactions.
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD align="left" valign="top">&nbsp;
+                      
+                    </TD>
+                    <TD class="paragraph_black_left_align">&nbsp;
+                      
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan="2" align="left" valign="top" class="paragraph_black_left_align">
+                      <SPAN class="BlackTextLargeBold">Auto-renewal Rates</SPAN>
+                      <BR>
+                       <SPAN class="BlackTextMedium">Auto-renewal rates apply to credit card payments only. All fees are charged in U.S. dollars. Your subscription will be automatically renewed on 30-day intervals beginning no sooner than 2 days prior to your paid through date. This will ensure uninterrupted access to your subscription.</SPAN>
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan="2" align="left" valign="top" class="paragraph_black_left_align">
+                      <P class="BlackTextMedium">&nbsp;
+                        
+                      </P>
+                      <TABLE width="100%" border="0" cellpadding="3" cellspacing="0">
+                        <TR>
+                          <TD class="BlackTextMedium">
+                            Credit Card Renewal
+                          </TD>
+                          
+                        </TR>
+                        <TR>
+                          <TD>
+                            <SPAN class="BlackTextMedium">12 Month Renewal Rate $ 6.66</SPAN> <SPAN class="RedTextMedium">Save %</SPAN>
+                          </TD>
+                          
+                        </TR>
+                        <TR>
+                          <TD>
+                            <SPAN class="BlackTextMedium"> 6 Month Renewal Rate $ 9.99</SPAN> <SPAN class="RedTextMedium">Save %</SPAN>
+                          </TD>
+                          
+                        </TR>
+                        <TR>
+                          <TD>
+                            <SPAN class="BlackTextMedium">3 Month Renewal Rate $ 13.31</SPAN> <SPAN class="RedTextMedium">Save %</SPAN>
+                          </TD>
+                          
+                        </TR>
+                        <TR>
+                          <TD>
+                            <SPAN class="BlackTextMedium">Month to Month Renewal Rate $19.99</SPAN> <SPAN class="RedTextMedium">Save %</SPAN>
+                          </TD>
+                          
+                        </TR>
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE>
+              </TD>
+            </TR>
+          </TABLE>
+        </TD>
+        <!-- End Main Data Cell -->
+      </TR>
+      <!-- End Navigation and Main Row -->
+	  <!-- Begin Copyright Row -->
+      <TR>
+        <TD colspan="2">
+          <IMG src="/images/pc_footer.gif">
+        </TD>
+      </TR>
+      <!-- End Copyright Row -->
+    </TABLE>
+    <P class="paragraph_black">
+    </P>
+  </BODY>
+</HTML>
+

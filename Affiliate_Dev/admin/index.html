@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML>
+  <HEAD>
+    <META name="generator" content="HTML Tidy, see www.w3.org">
+    <TITLE>
+      Affiliate Admin - Dev
+    </TITLE>
+  </HEAD>
+  <BODY>
+    <TABLE border="0" cellpadding="3" cellspacing="3" width="800">
+      <TR>
+        <TD width="577" bgcolor="#D1D1BF" height="500" valign="top">
+          <TABLE border="0" cellspacing="3" cellpadding="3" width="100%">
+            <TR>
+              <TD height="40" width="180" align="left" valign="middle">
+                <DIV align="left">
+                  <FONT color="#FFFFFF"><STRONG><FONT face="Arial, Helvetica, sans-serif" size="3">Affiliate Admin </FONT><FONT COLOR="#FF0000">Dev</FONT></STRONG></FONT> <FONT face="Arial, Helvetica, sans-serif" size="3"><STRONG>Admin Tasks Page</STRONG></FONT>
+                </DIV>
+              </TD>
+            </TR>
+            <TR>
+              <TD height="130" width="180" valign="top">
+                <TABLE width="100%" border="2" cellspacing="0" cellpadding="0" bordercolor="#FFFFDC">
+                  <TR valign="top">
+                    <TD height="235">
+                      <TABLE border="0" width="100%" cellspacing="3" cellpadding="3">
+                        <TR>
+                          <TD height="30">
+                            <FONT face="Arial, Helvetica, sans-serif" size="2"><STRONG><FONT color="#FFFFFF"><U><FONT size="3">Choose Task?</FONT></U></FONT></STRONG></FONT>
+                          </TD>
+                        </TR>
+                        <TR>
+                          <TD height="30">
+                            <A href="Admin_UploadAds.html"><FONT face="Arial, Helvetica, sans-serif" size="2">Upload Ads...</FONT></A>
+                          </TD>
+                        </TR>
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE>
+              </TD>
+              <TD height="130" width="180" valign="top">
+                <TABLE width="100%" border="2" cellspacing="0" cellpadding="0" bordercolor="#FFFFDC">
+                  <TR valign="top">
+                    <TD height="235">
+                      <TABLE border="0" width="100%" cellspacing="3" cellpadding="3">
+                        <TR>
+                          <TD height="30">
+                            <FONT face="Arial, Helvetica, sans-serif" size="2"><STRONG><FONT color="#FFFFFF"><U><FONT size="3">Quick Searches</FONT></U></FONT></STRONG></FONT>
+                          </TD>
+                        </TR>
+                        <TR>
+                          <TD height="30">
+							<FORM method="POST" action="/admin/cgi-bin/Admin_FreeFormAudit.cgi">
+							  <FONT face="arial, Helvetica, sans-serif" size="2">By User Name:</FONT>
+								 <INPUT name="user_name" size="20">
+								 <INPUT type="hidden" name="order_by" value="creation_date">
+								 <INPUT type="hidden" name="asc_desc" value="ASC">
+								 <INPUT type="hidden" name="limit" value="100">
+								 <INPUT type="hidden" name="index" value="1">
+								 <INPUT type="submit" name="submit" value="submit">
+							 </FORM>
+                          </TD>
+                        </TR>
+                        <TR>
+                          <TD height="30">
+							<FORM method="POST" action="/admin/cgi-bin/Admin_FreeFormAudit.cgi">
+							  <FONT face="arial, Helvetica, sans-serif" size="2">By Email:</FONT>
+								 <INPUT name="email" size="20">
+								 <INPUT type="hidden" name="order_by" value="creation_date">
+								 <INPUT type="hidden" name="asc_desc" value="ASC">
+								 <INPUT type="hidden" name="limit" value="100">
+								 <INPUT type="hidden" name="index" value="1">
+								 <INPUT type="submit" name="submit" value="submit">
+							 </FORM>
+                          </TD>
+                        </TR>
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE>
+              </TD>
+            </TR>
+          </TABLE>
+        </TD>
+      </TR>
+    </TABLE>
+  </BODY>
+</HTML>
+

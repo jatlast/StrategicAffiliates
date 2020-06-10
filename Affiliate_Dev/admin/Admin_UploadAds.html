@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML>
+  <HEAD>
+    <META name="generator" content="HTML Tidy, see www.w3.org">
+    <TITLE>
+      banner upload
+    </TITLE>
+  </HEAD>
+  <!-- Begin Entire Body NOT Logged In-->
+  <BODY>
+    <!-- Begin Main Table -->
+    <TABLE border="0" cellpadding="0" cellspacing="4" width="800">
+      <TR>
+        <TD bgcolor="#D1D1BF" valign="top">
+          <TABLE width="100%" border="0" cellspacing="3" cellpadding="3">
+            <TR>
+                <TD colspan="2" align="center">
+                  <FONT size="4"><STRONG>Upload <FONT color="red">Banner</FONT></STRONG></FONT>
+                </TD>
+            </TR>
+          </TABLE>
+          <FORM enctype="multipart/form-data" method="POST" action="cgi-bin/Admin_UploadAds.cgi">
+		    <TABLE width="100%" border="0" cellspacing="3" cellpadding="3">
+              <TR>
+                <TD nowrap align="right">
+                  <FONT size="2"><STRONG>Which Site:</STRONG></FONT>
+                </TD>
+                <TD>
+                  <SELECT name="affiliate_unique_id">
+                    <OPTION value="-1">
+                      Choose One
+                    </OPTION>
+                    <OPTION value="46">
+                      Bible Match
+                    </OPTION>
+                    <OPTION value="72">
+                      Gay Love Match
+                    </OPTION>
+                    <OPTION value="33">
+                      Jewish Love Match
+                    </OPTION>
+                    <OPTION value="20">
+                      Manhattan Connections
+                    </OPTION>
+                    <OPTION value="7">
+                      Persian Connections
+                    </OPTION>
+                    <OPTION value="59">
+                      UK Love Match
+                    </OPTION>
+                  </SELECT>
+                </TD>
+              </TR>
+              <TR>
+                <TD nowrap align="right">
+                  <FONT size="2"><STRONG>Ad Type:</STRONG></FONT>
+                </TD>
+                <TD>
+                  <SELECT name="ad_type">
+                    <OPTION value="1">
+                      Banner
+                    </OPTION>
+                  </SELECT>
+                </TD>
+              </TR>
+              <TR>
+                <TD align="right">
+                  <FONT size="2"><STRONG>Banner Image:</STRONG></FONT>
+                </TD>
+                <TD>
+                  <INPUT type="file" name="banner_name_and_path" size="32" accept="image/*">
+                </TD>
+                <TD colspan="2" align="center">
+                </TD>
+              </TR>
+              <TR>
+                <TD nowrap align="right">
+                  <FONT size="2"><STRONG>Width x Height:</STRONG></FONT>
+                </TD>
+                <TD>
+                  <SELECT name="width_x_height">
+                    <OPTION value="UNDEFINED">
+                      Choose One
+                    </OPTION>
+                    <OPTION value="88x31">
+                      88 x 31 (Micro Bar)
+                    </OPTION>
+                    <OPTION value="120x60">
+                      120 x 60 (Button 1)
+                    </OPTION>
+                    <OPTION value="120x90">
+                      120 x 90 (Button 2)
+                    </OPTION>
+                    <OPTION value="120x600">
+                      120 x 600 (Skyscraper)
+                    </OPTION>
+                    <OPTION value="125x125">
+                      125 x 125 (Square Button)
+                    </OPTION>
+                    <OPTION value="160x600">
+                      160 x 600 (Wide Skyscraper)
+                    </OPTION>
+                    <OPTION value="180x50">
+                      180 x 50 (Rectangle)
+                    </OPTION>
+                    <OPTION value="234x60">
+                      234 x 60 (Half Banner)
+                    </OPTION>
+                    <OPTION value="250x250">
+                      250 x 250 (Square Pop-up)
+                    </OPTION>
+                    <OPTION value="300x250">
+                      300 x 250 (Medium Rectangle)
+                    </OPTION>
+                    <OPTION value="468x60">
+                      468 x 60 (Full Banner)
+                    </OPTION>
+                  </SELECT>
+                </TD>
+              </TR>
+			  <TR> 
+				<TD nowrap align="right">
+					<FONT size="2"><STRONG>Ad Name:</STRONG></FONT>
+				</TD>
+				<TD>
+					<INPUT name="ad_name" size="32">
+				</TD>
+			  </TR>
+			  <TR> 
+				<TD nowrap align="right">
+					<FONT size="2"><STRONG>Brief Description:</STRONG></FONT>
+				</TD>
+				<TD>
+					<INPUT name="ad_description" size="32">
+				</TD>
+			  </TR>
+			  <TR> 
+				<TD nowrap align="right">
+					<FONT size="2"><STRONG>Target URL:</STRONG></FONT>
+				</TD>
+				<TD>
+					<INPUT name="target_url" size="32">
+				</TD>
+			  </TR>
+			  <TR> 
+				<TD nowrap align="right">
+					<FONT size="2"><STRONG>Alt Text:</STRONG></FONT>
+				</TD>
+				<TD>
+					<INPUT name="alt_text" size="32">
+				</TD>
+			  </TR>
+			  <TR> 
+				<TD nowrap align="right">
+					<FONT size="2"><STRONG>Mouse Over Text:</STRONG></FONT>
+				</TD>
+				<TD>
+					<INPUT name="mouse_over_text" size="32">
+				</TD>
+			  </TR>
+              <TR>
+                <TD colspan="2" align="center">
+                  <INPUT type="submit" value="Upload Banner" name="submit" onclick="return uploadCheck()">
+                </TD>
+              </TR>
+            </TABLE>
+          </FORM>
+        </TD>
+       </TR>
+       <TR>
+        <TD bgcolor="#D1D1BF" valign="top">
+          <TABLE width="100%" border="0" cellspacing="3" cellpadding="3">
+            <TR>
+                <TD colspan="2" align="center">
+                  <FONT size="4"><STRONG>Upload <FONT color="red">Text Link</FONT></STRONG></FONT>
+                </TD>
+            </TR>
+          </TABLE>
+          <FORM enctype="multipart/form-data" method="POST" action="cgi-bin/Admin_UploadAds.cgi">
+		    <TABLE width="100%" border="0" cellspacing="3" cellpadding="3">
+              <TR>
+                <TD nowrap align="right">
+                  <FONT size="2"><STRONG>Which Site:</STRONG></FONT>
+                </TD>
+                <TD>
+                  <SELECT name="affiliate_unique_id">
+                    <OPTION value="-1">
+                      Choose One
+                    </OPTION>
+                    <OPTION value="46">
+                      Bible Match
+                    </OPTION>
+                    <OPTION value="72">
+                      Gay Love Match
+                    </OPTION>
+                    <OPTION value="33">
+                      Jewish Love Match
+                    </OPTION>
+                    <OPTION value="20">
+                      Manhattan Connections
+                    </OPTION>
+                    <OPTION value="7">
+                      Persian Connections
+                    </OPTION>
+                    <OPTION value="59">
+                      UK Love Match
+                    </OPTION>
+                  </SELECT>
+                </TD>
+              </TR>
+              <TR>
+                <TD nowrap align="right">
+                  <FONT size="2"><STRONG>Ad Type:</STRONG></FONT>
+                </TD>
+                <TD>
+                  <SELECT name="ad_type">
+                    <OPTION value="2">
+                      Text Link
+                    </OPTION>
+                  </SELECT>
+                </TD>
+              </TR>
+			  <TR> 
+				<TD nowrap align="right">
+					<FONT size="2"><STRONG>Text Link Text:</STRONG></FONT>
+				</TD>
+				<TD>
+					<INPUT name="text_link_text" size="32">
+				</TD>
+			  </TR>
+			  <TR> 
+				<TD nowrap align="right">
+					<FONT size="2"><STRONG>Ad Name:</STRONG></FONT>
+				</TD>
+				<TD>
+					<INPUT name="ad_name" size="32">
+				</TD>
+			  </TR>
+			  <TR> 
+				<TD nowrap align="right">
+					<FONT size="2"><STRONG>Brief Description:</STRONG></FONT>
+				</TD>
+				<TD>
+					<INPUT name="ad_description" size="32">
+				</TD>
+			  </TR>
+			  <TR> 
+				<TD nowrap align="right">
+					<FONT size="2"><STRONG>Target URL:</STRONG></FONT>
+				</TD>
+				<TD>
+					<INPUT name="target_url" size="32">
+				</TD>
+			  </TR>
+			  <TR> 
+				<TD nowrap align="right">
+					<FONT size="2"><STRONG>Alt Text:</STRONG></FONT>
+				</TD>
+				<TD>
+					<INPUT name="alt_text" size="32">
+				</TD>
+			  </TR>
+			  <TR> 
+				<TD nowrap align="right">
+					<FONT size="2"><STRONG>Mouse Over Text:</STRONG></FONT>
+				</TD>
+				<TD>
+					<INPUT name="mouse_over_text" size="32">
+				</TD>
+			  </TR>
+              <TR>
+                <TD colspan="2" align="center">
+                  <INPUT type="submit" value="Upload Text Link" name="submit" onclick="return uploadCheck()">
+                </TD>
+              </TR>
+            </TABLE>
+          </FORM>
+        </TD>
+       </TR>
+       <TR>
+        <TD bgcolor="#D1D1BF" valign="top">
+          <TABLE width="100%" border="0" cellspacing="3" cellpadding="3">
+            <TR>
+                <TD colspan="2" align="center">
+                  <FONT size="4"><STRONG>Upload <FONT color="red">Embeded Start Page</FONT> or <FONT color="red">Emailable HTML</FONT></STRONG></FONT>
+                </TD>
+            </TR>
+          </TABLE>
+          <FORM enctype="multipart/form-data" method="POST" action="cgi-bin/Admin_UploadAds.cgi">
+		    <TABLE width="100%" border="0" cellspacing="3" cellpadding="3">
+              <TR>
+                <TD nowrap align="right">
+                  <FONT size="2"><STRONG>Which Site:</STRONG></FONT>
+                </TD>
+                <TD>
+                  <SELECT name="affiliate_unique_id">
+                    <OPTION value="-1">
+                      Choose One
+                    </OPTION>
+                    <OPTION value="46">
+                      Bible Match
+                    </OPTION>
+                    <OPTION value="72">
+                      Gay Love Match
+                    </OPTION>
+                    <OPTION value="33">
+                      Jewish Love Match
+                    </OPTION>
+                    <OPTION value="20">
+                      Manhattan Connections
+                    </OPTION>
+                    <OPTION value="7">
+                      Persian Connections
+                    </OPTION>
+                    <OPTION value="59">
+                      UK Love Match
+                    </OPTION>
+                  </SELECT>
+                </TD>
+              </TR>
+              <TR>
+                <TD nowrap align="right">
+                  <FONT size="2"><STRONG>Ad Type:</STRONG></FONT>
+                </TD>
+                <TD>
+                  <SELECT name="ad_type">
+                    <OPTION value="-1">
+                      Choose One
+                    </OPTION>
+                    <OPTION value="3">
+                      Embeded Start Page
+                    </OPTION>
+                    <OPTION value="4">
+                      Emailable HTML
+                    </OPTION>
+                  </SELECT>
+                </TD>
+              </TR>
+			  <TR> 
+				<TD nowrap align="right">
+					<FONT size="2"><STRONG>Ad Name:</STRONG></FONT>
+				</TD>
+				<TD>
+					<INPUT name="ad_name" size="32">
+				</TD>
+			  </TR>
+			  <TR> 
+				<TD nowrap align="right">
+					<FONT size="2"><STRONG>Brief Description:</STRONG></FONT>
+				</TD>
+				<TD>
+					<INPUT name="ad_description" size="32">
+				</TD>
+			  </TR>
+			  <TR>
+				<TD nowrap align="right">
+					<FONT size="2"><STRONG>HTML:</STRONG></FONT>
+				</TD>
+				<TD>
+		          <textarea rows="20" name="html_block" cols="50"></textarea>          
+				</TD>
+			  </tr>
+              <TR>
+                <TD colspan="2" align="center">
+                  <INPUT type="submit" value="Upload Interactive HTML" name="submit" onclick="return uploadCheck()">
+                </TD>
+              </TR>
+            </TABLE>
+          </FORM>
+        </TD>
+      </TR>
+    </TABLE>
+  </BODY>
+</HTML>
+
